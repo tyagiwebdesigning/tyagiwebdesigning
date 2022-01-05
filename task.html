@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="banner">
+    <div class="left " id="color">
+        <h1 id="text">Lorem ipsum dolor sit amet.</h1>
+        <p id="doc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita impedit illo temporibus iusto tempora, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dignissimos dolore delectus perferendis ipsa ex voluptates recusandae fugiat? Quibusdam voluptatibus ipsa, debitis illo recusandae modi labore obcaecati quod adipisci tempore! possimus cupiditate doloremque consectetur tenetur architecto!</p>
+    </div>
+    <div class="right" id="color1">
+        <button id="col1" onclick="tab('a')">Click 1</button>
+        <button id="col2" onclick="tab('b')">Click 2</button>
+        <button id="col3" onclick="tab('c')">Click 3</button>
+        <button id="col4" onclick="tab('d')">Click 4</button>
+        <button id="col5" onclick="tab('e')">Click 5</button>
+    </div>
+</div>    
+<script>
+    function tab(data){
+        let text ={
+            a:"Use the Menu",b:"Learn by Examples",c:"Why Study JavaScript?",
+            d:"Commonly Asked Questions",e:"JavaScript References"
+        }
+        let doc ={
+            a:`We recommend reading this tutorial, in the sequence listed in the menu you have a large screen,
+             the menu will always be present on the left If you have a small screen,
+              open the menu by clicking the top menu sign ☰.
+               Examples are better than 1000 words. Examples are often easier to understand than text explanations.`,
+            b:`Examples are better than 1000 words. Examples are often easier to understand than text explanations. 
+            This tutorial supplements all explanations with clarifying examples.We recommend reading this tutorial,
+             in the sequence listed in the menu.If you have a large screen
+            , the menu will always be present on the left. `,
+            c:`
+            JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages
+   e menu will always be present on the left If you have a small screen,
+              open the menu by clicking the top menu sign ☰.
+               Examples are better than 1000 words. Examples are often easier to understand than text expla`,
+            d:`In this tutorial, the learning speed is your choice.
+
+Everything is up to you.
+
+If you are struggling, take a break, or re-read the material.
+
+Always make sure you understand all the "Try-it-Yourself" examples.
+
+The only way to become a clever programmer is to: Practice. Practice. Practice. Code. Code. Code !Commonly Asked Questions
+How do I get JavaScript?
+Where can I download JavaScript?
+Is JavaScript Free?
+You don't have to get or download JavaScript.
+
+JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone.
+
+JavaScript is free to use for everyone.`,
+            e:`W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+
+The reference contains examples for all properties, methods and events, and is continuously updated according to the latest web standards.
+
+JavaScript Quiz Test
+Test your JavaScript skills at W3Schools!Use the Menu
+We recommend reading this tutorial, in the sequence listed in the menu.
+
+If you have a large screen, the menu will always be present on the left.
+
+If you have a small screen, open the menu by clicking the top menu sign ☰.
+
+Learn by Examples
+Examples are better than 1000 words. Examples are often easier to understand than text explanations.
+
+This tutorial supplements all explanations with clarifying "Try it Yourself" examples.
+
+If you try all the examples, you will learn a lot about JavaScript, in a very short time!
+
+Why Study JavaScript?
+JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages
+
+This tutorial covers every version of JavaScript:
+
+The Original JavaScript ES1 ES2 ES3 (1997-1999)
+The First Main Revision ES5 (2009)
+The Second Revision ES6 (2015)
+The Yearly Additions (2016, 2017, 2018)
+Learning Speed
+In this tutorial, the learning speed is your choice.
+
+Everything is up to you.
+
+If you are struggling, take a break, or re-read the material.
+
+Always make sure you understand all the "Try-it-Yourself" examples.
+
+The only way to become a clever programmer is to: Practice. Practice. Practice. Code. Code. Code !
+
+`
+        }
+        let color={
+            a:"linear-gradient(to right, rgb(238, 162, 154), rgb(201, 76, 76)",
+            b:"linear-gradient(to right, rgb(130, 0, 159) 10%, rgb(93, 52, 175) 50%, rgb(0, 206, 171) 100%)",
+            c:"linear-gradient(to right, rgb(214, 65, 97), rgb(255, 123, 37)",
+            d:"linear-gradient(to right, rgb(40, 140, 165), rgb(255, 123, 37)",
+            e:"linear-gradient(to right, rgb(241, 137, 115), rgb(80, 57, 76)"
+
+        }
+        document.getElementById('text').innerHTML=text[data];
+        document.getElementById('doc').innerHTML=doc[data];
+        document.getElementById('color').style.backgroundImage=color[data];
+        document.getElementById('color1').style.backgroundImage=color[data];
+    }
+</script>
+</body>
+</html>
